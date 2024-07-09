@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
 //@RequestMapping("/employee")
+@RestController
 public class EmployeeController
 {
 	private static final int SUCCESS_CODE = 200;
@@ -48,10 +48,4 @@ public class EmployeeController
 		return "";
 	}
 
-	@GetMapping("/api/employee/")
-	public String test(@RequestParam(name="id", required = true, defaultValue = "0") Integer id, Model model)
-	{
-		//TODO: content
-		return "";
-	}
 }
